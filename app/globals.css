@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3ebdd;
+  --ink: #1b1a17;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-vermilion: #d9432b;
+  --font-serif: var(--font-noto-serif), "Songti TC", "PMingLiU", serif;
+  --font-sans: var(--font-noto-sans), "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-vermilion);
+  color: var(--paper);
+}
